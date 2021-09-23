@@ -3,8 +3,6 @@ title: typescript paths
 date: 2021/09/22
 ---
 
-## typescript paths
-
 typescript paths 可以使我们告别相对路径，例如我有如下文件：
 packageA
 |-main

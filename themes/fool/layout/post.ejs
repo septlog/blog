@@ -1,1 +1,17 @@
-<h1>this is a post</h1>
+<%- date(page.date, 'YYYY/MM/DD' ) %>
+    tag: <% page.tags.forEach(tag=> { %>
+        <%- tag.name %>
+            <% }) %>
+                <%- page.content %>
+                    <div style="display: flex; justify-content: space-around;">
+                        <% if (page.prev) { %>
+                            <a href="<%- url_for(page.prev.path) %> ">
+                                <%- page.prev.title %>
+                            </a>
+                            <% } %>
+                                <% if (page.next) { %>
+                                    <a href="<%- url_for(page.next.path) %> ">
+                                        <%- page.next.title %>
+                                    </a>
+                                    <% } %>
+                    </div>
