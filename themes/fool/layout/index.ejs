@@ -1,6 +1,9 @@
 <% site.posts.forEach(post=> { %>
-    <div><a href="<%- post.path %>">
-            <%- post.title %>
-        </a></div>
+<div><a href="<%- post.path %>"> <%- post.title %> </a></div>
 
-    <% }) %>
+<% }) %> <% site.pages.forEach(post=> { %>
+<hr />
+<div>页面</div>
+<div><a href="<%- post.path %>"> <%- post.title %> </a></div>
+
+<% }) %>
