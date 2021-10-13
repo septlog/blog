@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+.posts-list {
+  text-align: center;
+}
+.posts-list :hover {
+}
+.post-link-wrapper {
+  margin: 20px 0;
+}
+
+.d {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: cornflowerblue;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+}
+.dd {
+  width: 400px;
+  height: 400px;
+  background-color: cornflowerblue;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}

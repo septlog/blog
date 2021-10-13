@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="<%- url_for('/css/index.css') %> " />
     <title>
       <% if(page.title) { %> <%- page.title %> - septlog <% } else { %> septlog
       <% } %>
@@ -13,5 +14,17 @@
   <body style="position: relative">
     <%- partial('partial/header') %> <%- body %> <%- partial('partial/footer')
     %>
+    <script>
+      let posts = document.querySelectorAll('.post-link');
+      let block = document.querySelector('.d');
+      for (let post of posts) {
+        post.addEventListener('mouseenter', () => {
+          block.className = 'dd';
+        });
+        post.addEventListener('mouseleave', () => {
+          block.className = 'd';
+        });
+      }
+    </script>
   </body>
 </html>
