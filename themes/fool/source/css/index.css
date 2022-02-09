@@ -2,12 +2,16 @@
   box-sizing: border-box;
 }
 .posts-list {
-  text-align: center;
+  /* text-align: center; */
+  background-color: navy;
+  color: white;
 }
 .posts-list :hover {
 }
 .post-link-wrapper {
-  margin: 20px 0;
+  /* margin: 20px 0; */
+  /* background-color: navy;
+  color: white; */
 }
 
 .d {
