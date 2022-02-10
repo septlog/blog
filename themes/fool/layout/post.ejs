@@ -1,21 +1,28 @@
-<%- date(page.date, 'YYYY/MM/DD' ) %> tag: <% page.tags.forEach(tag=> { %>
-    <a href="<%-
-tag.name %>">
-      <%- tag.name %>
-    </a>
-    <% }) %>
-      <%- page.content %>
-        <div style="display: flex; justify-content: space-around">
-          <% if (page.prev) { %>
-            <div>
-              <span>prev post</span> <a href="<%- url_for(page.prev.path) %> ">
-                <%- page.prev.title %>
-              </a>
-            </div>
-            <% } %>
-              <% if (page.next) { %>
-                <div><span>next post</span> <a href="<%- url_for(page.next.path) %> ">
-                    <%- page.next.title %>
-                  </a></div>
-                <% } %>
-        </div>
+<%- date(page.date, 'YYYY/MM/DD' ) %>
+<span>tag:</span>
+<% page.tags.forEach(tag=> { %>
+<a href="<%- tag.name %>">
+    <%- tag.name %>
+</a>
+<% }) %>
+
+<%- page.content %>
+
+<div style="display: flex; justify-content: space-around">
+    <% if (page.prev) { %>
+    <div>
+        <span>prev post</span> <a href="<%- url_for(page.prev.path) %> ">
+            <%- page.prev.title %>
+        </a>
+    </div>
+    <% } %>
+
+    <% if (page.next) { %>
+    <div>
+        <span>next post</span>
+        <a href="<%- url_for(page.next.path) %> ">
+            <%- page.next.title %>
+        </a>
+    </div>
+    <% } %>
+</div>

@@ -8,6 +8,7 @@ tags: git
 
 git config --global user.name username
 git config --global user.email user@email.com
+{% link text url [external] [title] %}
 git commit --amend --reset-author --no-edit
 
 ## 修改指定 commit 的 author
