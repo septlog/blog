@@ -26,6 +26,17 @@
   clip-path: inset(0 0 0 0);
 }
 
+.cursor {
+  position: fixed;
+  border: 3px solid #2bb5eb;
+  pointer-events: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transform-origin: center;
+}
+
 .d {
   width: 200px;
   height: 200px;

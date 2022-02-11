@@ -104,3 +104,5 @@ deploy:
   type: 'git'
   repo: 'https://github.com/septlog/septlog.github.io.git'
   branch: 'master'
+  name: 'septlog'
+  email: 'septlog@qq.com'

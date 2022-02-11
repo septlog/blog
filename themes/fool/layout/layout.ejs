@@ -19,6 +19,34 @@
     <%- partial('partial/header') %>
     <%- body %>
     <%- partial('partial/footer') %>
+    <script>
+        let x, y;
+        let mouseX = 0;
+        let mouseY = 0;
+        let diffX;
+        let diffY;
+        let distanceX;
+        let distanceY;
+        
+        let cursorElement = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', (e) => {
+            x = `${e.clientX - cursorElement.clientWidth / 2}px`
+            y = `${e.clientY - cursorElement.clientHeight / 2}px`
+        });
+
+        const mouseMove = () => {
+            window.requestAnimationFrame(mouseMove)
+            
+            cursorElement.style.left = x;
+            cursorElement.style.top = y;
+            
+            
+        }
+        mouseMove()
+        
+
+    </script>
 </body>
 
 </html>

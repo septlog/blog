@@ -13,10 +13,9 @@
     </h2>
 
   <% }) %>
-   
-  <% site.pages.forEach(post=> { %>
-  </div>
-  <hr />
+</div>
+
+<% site.pages.forEach(post=> { %>
   <div>页面</div>
   <h2>
     <a href="<%- post.path %>">
@@ -25,3 +24,5 @@
   </h2>
 
 <% }) %>
+
+<div class="cursor"></div>
