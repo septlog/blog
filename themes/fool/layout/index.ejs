@@ -1,6 +1,13 @@
 <div style="display: flex;">
     <div class="posts-list">
-        <% site.posts.forEach(post=> { %>
+        <% 
+            // fast array clone
+            let posts = site.posts.slice(0);
+            posts.sort((a, b)=>{ 
+                return a.date < b.date;
+            })
+        %> 
+        <% posts.forEach(post=> { %>
           <h2 class="post-link-wrapper">
               
               <a target="_blank" class="post-link" href="<%- post.path %>">
@@ -10,7 +17,6 @@
                   # <%- post.title %>
                   
               </div>
-              
           </h2>
       
         <% }) %>

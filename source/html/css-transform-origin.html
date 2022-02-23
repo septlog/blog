@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title></title>
+    <style>
+      #trans1 {
+        animation-duration: 3s;
+        animation-name: rotate1;
+        animation-iteration-count: infinite;
+        position: relative;
+      }
+
+      #trans2 {
+        animation-duration: 3s;
+        animation-name: rotate2;
+        animation-iteration-count: infinite;
+        position: relative;
+      }
+
+      @keyframes rotate1 {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes rotate2 {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div style="margin-left: 10em">
+      <div
+        id="trans1"
+        style="width: 100px; height: 100px; background-color: red"
+      >
+        <div
+          style="
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 12px;
+            height: 12px;
+            background-color: black;
+            transform: translate(-50%, -50%);
+          "
+        ></div>
+      </div>
+      <div
+        id="trans2"
+        style="
+          width: 100px;
+          height: 100px;
+          background-color: blue;
+          transform-origin: 0 0;
+        "
+      >
+        <div
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 12px;
+            height: 12px;
+            background-color: black;
+          "
+        ></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -6,8 +6,4 @@ tags:
 
 css transform 包括旋转、缩放等默认都是以元素中心点为原点的
 
-<div style="width: 100px; height: 100px; background-color: red; transform: "></div>
-<div style="width: 100px; height: 100px; background-color: blue;"></div>
-<script>
-    console.log('ok')
-</script>
+<iframe width="500px" height="400px" src="/html/css-transform-origin.html">
