@@ -21,11 +21,7 @@ for (let i of obj) {
 
 for ... of 允许遍历一个含有 iterator 接口的数据结构（数组、对象等）并且返回各项的值。
 
-```js
-for (let i of arr) {
-  console.log(i); // 1, 2, 3, 4
-}
-```
+![1](1.png)
 
 技巧：in 不用于 'i'terables，of 不用于 'o'bject。
 

@@ -28,9 +28,50 @@ pre {
   }
 
   .keyword,
-  .javascript {
-    .function {
-      color: $highlight-purple;
-    }
+  .javascript .function {
+    color: $highlight-purple;
   }
+  .number {
+    color: $highlight-blue;
+  }
+  .string {
+    color: $highlight-red;
+  }
+}
+
+.post-link {
+  text-decoration: none;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.25);
+  color: transparent;
+  &-clone {
+    clip-path: inset(0 100% 0 0);
+    color: black;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    pointer-events: none;
+  }
+  &-wrapper {
+    position: relative;
+    z-index: 0;
+  }
+  &:hover ~ &-clone {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.cursor {
+  position: fixed;
+  border: 3px solid #2bb5eb;
+  pointer-events: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transform-origin: center;
+}
+
+strong {
+  background-color: rgba(84, 182, 235, 0.25);
+  position: relative;
 }

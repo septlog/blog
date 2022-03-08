@@ -1,32 +1,29 @@
-:root {
-  --highlight-background: #2d2d2d;
-  --highlight-current-line: #393939;
-  --highlight-selection: #515151;
-  --highlight-foreground: #cccccc;
-  --highlight-comment: #999999;
-  --highlight-red: #f2777a;
-  --highlight-orange: #f99157;
-  --highlight-yellow: #ffcc66;
-  --highlight-green: #99cc99;
-  --highlight-aqua: #66cccc;
-  --highlight-blue: #6699cc;
-  --highlight-purple: #cc99cc;
+pre .comment {
+  color: #999999;
 }
-* {
-  box-sizing: border-box;
+pre .built_in,
+pre .constant {
+  color: #f99157;
+}
+pre .javascript .title {
+  color: #6699cc;
+}
+pre .keyword,
+pre .javascript .function {
+  color: #cc99cc;
+}
+pre .number {
+  color: #6699cc;
+}
+pre .string {
+  color: #f2777a;
 }
 
-.post-link-wrapper {
-  position: relative;
-  z-index: 0;
-}
 .post-link {
   text-decoration: none;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.25);
   color: transparent;
-  /* position: relative; */
 }
-
 .post-link-clone {
   clip-path: inset(0 100% 0 0);
   color: black;
@@ -35,7 +32,10 @@
   transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   pointer-events: none;
 }
-
+.post-link-wrapper {
+  position: relative;
+  z-index: 0;
+}
 .post-link:hover ~ .post-link-clone {
   clip-path: inset(0 0 0 0);
 }
@@ -51,44 +51,9 @@
   transform-origin: center;
 }
 
-.d {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: cornflowerblue;
-  transition: all 0.3s;
-  position: absolute;
-  top: 0;
-}
-.dd {
-  width: 400px;
-  height: 400px;
-  background-color: cornflowerblue;
-  transition: all 0.3s;
-  position: absolute;
-  top: 0;
-  z-index: -1;
+strong {
+  background-color: rgba(84, 182, 235, 0.25);
+  position: relative;
 }
 
-pre .comment {
-  color: var(--highlight-comment);
-}
-pre .built_in {
-  color: var(--highlight-orange);
-}
-
-pre .constant {
-  color: var(--highlight-orange);
-}
-
-pre .javascript .title {
-  color: var(--highlight-blue);
-}
-
-pre .keyword {
-  color: var(--highlight-purple);
-}
-
-pre .javascript .function {
-  color: var(--highlight-purple);
-}
+/*# sourceMappingURL=index.css.map */
