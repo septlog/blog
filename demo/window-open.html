@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <button id="btn"></button>
+    <button id="btn2"></button>
+    <script>
+      let btn = document.getElementById('btn');
+      let btn2 = document.getElementById('btn2');
+      let anotherWindow;
+      btn.addEventListener('click', () => {
+        anotherWindow = window.open('./window-open.html');
+        window.focus();
+      });
+      btn2.addEventListener('click', () => {
+        window.opener.focus();
+      });
+      console.log(a);
+      let a = 1;
+    </script>
+  </body>
+</html>
