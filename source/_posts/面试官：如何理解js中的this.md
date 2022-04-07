@@ -15,7 +15,7 @@ tags: 面试
 
 ## 匿名函数的 this
 
-匿名函数没有自己的 this，它指向的 this
+匿名函数没有自己的 this，它指向的 this 是它上级作用域的 this
 
 ## 改变 this 的方法
 

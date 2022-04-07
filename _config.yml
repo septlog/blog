@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: septlog's *
+title: log's *
 subtitle: 'sleep'
 description: 'the fool'
 keywords:
-author: septlog
+author: log
 language: zh
 timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://septlog.github.io
+url: https://lloogg.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -102,7 +102,7 @@ theme: fool
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: 'https://github.com/septlog/septlog.github.io.git'
+  repo: 'https://github.com/lloogg/lloogg.github.io.git'
   branch: 'master'
-  name: 'septlog'
+  name: 'lloogg'
   email: 'septlog@qq.com'
