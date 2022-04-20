@@ -4,8 +4,8 @@
     <link rel="stylesheet" href="" />
   </head>
   <body>
-    <button id="btn"></button>
-    <button id="btn2"></button>
+    <button id="btn">open new window</button>
+    <button id="btn2">opener focus</button>
     <script>
       let btn = document.getElementById('btn');
       let btn2 = document.getElementById('btn2');
@@ -16,9 +16,8 @@
       });
       btn2.addEventListener('click', () => {
         window.opener.focus();
+        console.log(document.body.ownerDocument.defaultView);
       });
-      console.log(a);
-      let a = 1;
     </script>
   </body>
 </html>
