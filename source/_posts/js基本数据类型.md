@@ -1,7 +1,9 @@
 ---
 title: js数据类型
 date: 2022-02-22 18:09:47
-tags: js 面试题
+tags:
+  - js
+  - 面试
 ---
 
 js 中，原始数据类型（primitive）不是一个对象（object），并且没有方法（method）
