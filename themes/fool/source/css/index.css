@@ -18,6 +18,9 @@ pre .number {
 pre .string {
   color: #f2777a;
 }
+pre .attr {
+  color: #99cc99;
+}
 
 .post-link {
   text-decoration: none;
