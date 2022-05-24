@@ -69,6 +69,23 @@ var a = 'oops, global'; // a 是全局对象的属性
 bar(); // "oops, global"
 ```
 
-### 显示绑定
+### 显式绑定
+
+#### 1. 硬绑定
+
+call，apply，bind
+
+#### 2. Api 的引用上下文
+
+```js
+function foo(el) {
+  console.log(el, this.id);
+}
+var obj = { id: 'awesome' }; // 调用 foo(..) 时把 this 绑定到 obj [1, 2, 3].forEach( foo, obj ); // 1 awesome 2 awesome 3 awesome
+```
+
+实际就是通过 call，apply 实现了显示绑定
 
 ### new 绑定
+
+所有函数都可以通过
